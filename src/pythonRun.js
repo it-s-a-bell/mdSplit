@@ -2,21 +2,17 @@
 var _require = require('python-shell'),
 PythonShell = _require.PythonShell;
 
-
  Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-
-//let path = 'C:\\Users\\isabe\\Desktop\\npm_isa\\mainmd.md' 
-let results = []  
-
 exports.pythonRes = pythonRes;
 
-function pythonRes(path){
+function pythonRes(path = './src/example/example.md', pathOut= './example/'){
+  let results = []
     return new Promise((resolve, reject) => {
-      //let result;
-      let pyshell = new PythonShell('./src/md_split.py', {mode: 'text', args: [path]});
+      
+      let pyshell = new PythonShell('./src/md_split.py', {mode: 'text', args: [path, pathOut]});
       
       pyshell.send(JSON.stringify(path));
       
@@ -38,8 +34,7 @@ function pythonRes(path){
     });
   }
 
-// promise reference in other files.
-
+// promise reference in other files- example
  /*  pythonRes(path).then((res) => {
     console.log(res);
     let wPath = res[res.length-2];

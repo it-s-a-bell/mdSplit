@@ -1,20 +1,31 @@
 {
-  "name": "isa",
+  "name": "dypsloom-docu",
   "version": "1.0.0",
   "description": "",
-  "main": "node --es-module-specifier-resolution=node start.mjs",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --es-module-specifier-resolution=node index.mjs",
-    "build": "babel src -d lib"
+    "build": "babel src -d lib",
+    "example": "node ./src/example/trial.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "bin": {
+    "split_pdf_convert": "./bin/split_pdf_convert.js",
+    "python_split": "./bin/python_split.js"
+  },
+  "keywords": [
+    "dypsloom",
+    "Markdown",
+    "Documentation",
+    "PDF"
+  ],
+  "author": "Isabel Medina",
+  "license": "MIT",
   "dependencies": {
     "@open-wc/webpack-import-meta-loader": "^0.4.7",
     "menneu": "^0.2.2",
-    "python-shell": "^2.0.1"
+    "python-shell": "^2.0.1",
+    "shelljs": "^0.8.4",
+    "yargs": "^15.3.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

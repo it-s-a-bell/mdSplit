@@ -1,9 +1,9 @@
 ---
 title: Dypsloom Character Controller
-date: 2020-05-01
-docsRevision: 1.0.00
-assetVersion: 1.0.00
+date: 06/07/2020
+author: John Doe
 ---
+
 ## Introduction
 
 The Dypsloom Character Controller is an Unity asset that offers a simple yet powerful set of
@@ -14,23 +14,24 @@ The implementation of these features are simple which means they are a bit limit
 said the code is well structured and fully documented. Therefore it can easily be extended to
 your own needs with a bit of custom code.
 
+
 ## Content
 
 The asset contains the following:
-● The Dyp character model with textures, shaders and effects
-● The Environment, including Ice platforms, Water, Ice crystals, a pickaxe and a fish
-● The scripts include a pool manager, damageable, interactable, UsabelItem, etc...
-● A demo scene with a mini game where Dyp needs to find the fish
+- The Dyp character model with textures, shaders and effects
+- The Environment, including Ice platforms, Water, Ice crystals, a pickaxe and a fish
+- The scripts include a pool manager, damageable, interactable, UsabelItem, etc...
+- A demo scene with a mini game where Dyp needs to find the fish
 The asset requires:
-● TextMeshPro
-● Built-in or URP render pipelines
+- TextMeshPro
+- Built-in or URP render pipelines
 The asset does not support
-● HDRP
+- HDRP
 This asset integrates with:
-● URP
-● TextMeshPro
-● Cinemachine
-● Boar hunter
+- URP
+- TextMeshPro
+- Cinemachine
+- Boar hunter
 
 ## Getting started
 
